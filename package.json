@@ -1,0 +1,48 @@
+{
+  "name": "http-error-catalog",
+  "version": "0.1.0",
+  "description": "Type-safe, centralized HTTP error catalog for APIs",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./express": {
+      "types": "./dist/express/index.d.ts",
+      "default": "./dist/express/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "error",
+    "http",
+    "catalog",
+    "api",
+    "error-handling",
+    "typescript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "express": "^5.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "peerDependencies": {
+    "express": ">=4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "express": {
+      "optional": true
+    }
+  }
+}
