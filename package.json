@@ -1,7 +1,14 @@
 {
-  "name": "http-error-catalog",
+  "name": "@santiago-musso/http-error-catalog",
   "version": "0.1.0",
   "description": "Type-safe, centralized HTTP error catalog for APIs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Santiago-Musso/http-error-catalog.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "type": "module",
   "exports": {
     ".": {
