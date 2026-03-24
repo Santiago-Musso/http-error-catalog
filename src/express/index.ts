@@ -1,5 +1,5 @@
 import type { Request, Response, NextFunction } from 'express';
-import { CatalogError } from '../error.js';
+import { CatalogError } from '../error';
 
 export interface ErrorHandlerOptions {
   onError?: (error: unknown, req: Request) => void;

@@ -1,5 +1,5 @@
-import { CatalogError } from './error.js';
-import type { ErrorEntry, TypedCatalog } from './types.js';
+import { CatalogError } from './error';
+import type { ErrorEntry, TypedCatalog } from './types';
 
 const registry = new Map<string, ErrorEntry>();
 

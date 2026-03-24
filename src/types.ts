@@ -11,7 +11,7 @@ export interface TypedCatalog<Codes extends string> {
    * @param customMessage - Optional context appended after the default message
    * @returns A CatalogError instance (throw it yourself)
    */
-  (code: Codes, customMessage?: string): import('./error.js').CatalogError;
+  (code: Codes, customMessage?: string): import('./error').CatalogError;
 
   /**
    * Register new error codes. Throws if any code is already registered.
@@ -24,7 +24,7 @@ export interface TypedCatalog<Codes extends string> {
   /**
    * Type-narrowing guard. Checks if an unknown error is a CatalogError with the given code.
    */
-  is(error: unknown, code: Codes): error is import('./error.js').CatalogError;
+  is(error: unknown, code: Codes): error is import('./error').CatalogError;
 
   /**
    * Clear all registered codes. Useful for test isolation.

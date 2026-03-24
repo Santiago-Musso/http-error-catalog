@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
-import { httpErrorCatalog } from '../src/index.js';
-import { errorHandler } from '../src/express/index.js';
+import { httpErrorCatalog } from '../src/index';
+import { errorHandler } from '../src/express/index';
 
 function createMockRes() {
   const res: any = {};

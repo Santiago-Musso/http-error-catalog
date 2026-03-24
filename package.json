@@ -1,6 +1,6 @@
 {
   "name": "@santiago-musso/http-error-catalog",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Type-safe, centralized HTTP error catalog for APIs",
   "repository": {
     "type": "git",
@@ -9,15 +9,16 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
+      "require": "./dist/index.js"
     },
     "./express": {
       "types": "./dist/express/index.d.ts",
-      "default": "./dist/express/index.js"
+      "require": "./dist/express/index.js"
     }
   },
   "files": [

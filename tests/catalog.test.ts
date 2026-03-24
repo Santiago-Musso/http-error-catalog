@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach } from 'vitest';
-import { httpErrorCatalog, CatalogError } from '../src/index.js';
+import { httpErrorCatalog, CatalogError } from '../src/index';
 
 describe('httpErrorCatalog', () => {
   let errors: ReturnType<typeof httpErrorCatalog.reset>;
